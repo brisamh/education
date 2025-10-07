@@ -26,7 +26,7 @@ This project will explore the relationship between student outcomes and various 
 
 ## Data
 
-- **Source:** [EdGap Data]([https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND](https://github.com/brian-fischer/DATA-5100/blob/main/EdGap_data.xlsx)) and [National Center for Education Statistics Data]([https://github.com/brisamh/weather/blob/main/data/pdx_rain.csv](https://www.dropbox.com/scl/fi/fkafjk8902sq8ptxh94r2/ccd_sch_029_1617_w_1a_11212017.csv?rlkey=gucrdz5f6e38bezz2y3yalxbw&e=1&dl=0))
+- **Source:** [EdGap Data]([https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND](https://github.com/brian-fischer/DATA-5100/blob/main/EdGap_data.xlsx)), [National Center for Education Statistics Data]([https://github.com/brisamh/weather/blob/main/data/pdx_rain.csv](https://www.dropbox.com/scl/fi/fkafjk8902sq8ptxh94r2/ccd_sch_029_1617_w_1a_11212017.csv?rlkey=gucrdz5f6e38bezz2y3yalxbw&e=1&dl=0)), and CRDC Data
 - **Description:** TBD
 - **License:** TBD
 ---
