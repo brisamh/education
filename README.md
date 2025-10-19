@@ -27,7 +27,7 @@ This project will explore the relationship between student outcomes and various 
 ## Data  
 **Source:**  
 - **[EdGap Dataset](https://raw.githubusercontent.com/brian-fischer/DATA-5100/main/EdGap_data.xlsx):** Provides average ACT scores and socioeconomic factors at the census tract level.  
-- **[National Center for Education Statistics (NCES) – School Info Dataset]:** Includes over 100k school records with key school identifiers and attributes such as Charter status.   
+- **[National Center for Education Statistics (NCES) – School Info Dataset](https://www.dropbox.com/scl/fi/fkafjk8902sq8ptxh94r2/ccd_sch_029_1617_w_1a_11212017.csv?rlkey=gucrdz5f6e38bezz2y3yalxbw&dl=0):** Includes over 100k school records with key school identifiers and attributes such as Charter status.   
 
 **Additional Data:**  
 - **[Civil Rights Data Collection (CRDC)](https://raw.githubusercontent.com/brisamh/education/refs/heads/main/data/Referrals%20and%20Arrests.csv):** Provides the number of student referrals and arrests at the school level.
