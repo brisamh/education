@@ -27,10 +27,11 @@ This project will explore the relationship between student outcomes and various 
 ## Data  
 **Source:**  
 - **EdGap Dataset:** Provides average ACT scores and socioeconomic factors at the census tract level.  
-- **National Center for Education Statistics (NCES) – School Info Dataset:** Includes over 100k school records with key school identifiers and attributes such as Charter status.  
-- **Civil Rights Data Collection (CRDC):** Provides the number of student referrals and arrests at the school level.  
+- **National Center for Education Statistics (NCES) – School Info Dataset:** Includes over 100k school records with key school identifiers and attributes such as Charter status.   
 
 **Additional Data:**  
+- **Civil Rights Data Collection (CRDC):** Provides the number of student referrals and arrests at the school level.
+- **National Center for Education Statistics:** Used to generate a table of data at the public school level for various characteristics about each school, such as Student:Teacher ratio, the locale of the school (city/rural etc), and many other data points
 - **Higher Education Institutions by ZIP code:** Used to estimate the influence of nearby colleges and universities.  
 - **State-level ACT/SAT Testing Policy Data:** Indicates whether testing is mandatory, optional, or not provided.  
 
