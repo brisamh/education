@@ -26,14 +26,17 @@ This project will explore the relationship between student outcomes and various 
 
 ## Data  
 **Source:**  
-- **EdGap Dataset:** Provides average ACT scores and socioeconomic factors at the census tract level.  
-- **National Center for Education Statistics (NCES) – School Info Dataset:** Includes over 100k school records with key school identifiers and attributes such as Charter status.   
+- **[EdGap Dataset](https://raw.githubusercontent.com/brian-fischer/DATA-5100/main/EdGap_data.xlsx):** Provides average ACT scores and socioeconomic factors at the census tract level.  
+- **[National Center for Education Statistics (NCES) – School Info Dataset]:** Includes over 100k school records with key school identifiers and attributes such as Charter status.   
 
 **Additional Data:**  
-- **Civil Rights Data Collection (CRDC):** Provides the number of student referrals and arrests at the school level.
-- **National Center for Education Statistics:** Used to generate a table of data at the public school level for various characteristics about each school, such as Student:Teacher ratio, the locale of the school (city/rural etc), and many other data points
-- **Higher Education Institutions by ZIP code:** Used to estimate the influence of nearby colleges and universities.  
-- **State-level ACT/SAT Testing Policy Data:** Indicates whether testing is mandatory, optional, or not provided.  
+- **[Civil Rights Data Collection (CRDC)](https://raw.githubusercontent.com/brisamh/education/refs/heads/main/data/Referrals%20and%20Arrests.csv):** Provides the number of student referrals and arrests at the school level.
+- **[National Center for Education Statistics](https://raw.githubusercontent.com/brisamh/education/main/data/CCD_elsi_table_generator_data.xlsx):** Used to generate a table of data at the public school level for various characteristics about each school, such as Student:Teacher ratio, the locale of the school (city/rural etc), and many other data points
+- **[Higher Education Institutions by ZIP code](https://github.com/brisamh/education/raw/refs/heads/main/data/hd2017.csv):** Used to estimate the influence of nearby colleges and universities.  
+- **[State-level ACT/SAT Testing Policy Data](https://www.piqosity.com/act-sat-graduation-requirements-by-state/):** Indicates whether testing is mandatory, optional, or not provided.
+
+**Final Data:**   
+After extensive pre-processing and transformation, the Regression Analysis uses the final dataset provided [here](https://raw.githubusercontent.com/brisamh/education/refs/heads/main/data/clean_education_project_data.csv)
 
 **Description:**  
 The final cleaned dataset combines these sources to form a robust foundation for analyzing school-level ACT outcomes.
@@ -56,7 +59,7 @@ Despite my hypotheses on how the various additional data would improve the model
 - Expanded models with school-type and testing-policy data improved explanatory power marginally (**R² = 0.655 vs 0.624**)
 - All p-values of my expanded model were highly statistically significant, but the coefficients were very small and did not result in much change in ACT Scores
 - Ultimately, the reduced model is preferred for interpretability and practical application.
-- One way I could continue to investigate the correlations with my additional data to ACT Scores would be to count at the School District level: Higher Education Institutions by School District, rather than limiting it to just the same Zip Code. Include Referrals and Arrests at all schools in the school district rather than that specific High School in that specific year.  
+- One way I could continue to investigate the correlations with my additional data to ACT Scores would be to count at the School District level: Higher Education Institutions by School District, rather than limiting it to just the same Zip Code. Include Referrals and Arrests at all schools in the school district rather than that specific High School in that specific year.
 
 
 ---
