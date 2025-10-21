@@ -49,17 +49,18 @@ The final cleaned dataset combines these sources to form a robust foundation for
 
 The most challenging part of this analysis was the data preperation of the additional datasets. Extensive cleaning was needed on values, columns, keys, and careful validation of the joins. Once the final DataFrame was merged, it was exported for analysis using OLS (Ordinary Least Squares) linear regression modeling.
 
-Despite my hypotheses on how the various additional data would improve the model, the best model was highly reduced: the most indicative predictor of ACT Scores was the % of students at the school receiving free or reduced lunch. My large multivariate model that included predictors such as student teacher ratio, law enforcement referrals or arrests, nearby higher education institutions, whether the ACT/SAT was mandated by the state, and numerous other factors ultimately failed to provide more than a marginal improvement in explanatory power when compared to a reduced model of three predictors. This model achieved an **R² of 0.655** while the reduced model using only three predictors (`rate_unemployment + percent_college + percent_lunch`) achieved an **R² of 0.624**.
+Despite my hypotheses on how the various additional data would improve the model, the best model was highly reduced: the most indicative predictor of ACT Scores was the % of students at the school receiving free or reduced lunch. My large multivariate model that included predictors such as student teacher ratio, law enforcement referrals or arrests, nearby higher education institutions, whether the ACT/SAT was mandated by the state, and numerous other factors ultimately failed to provide more than a marginal improvement in explanatory power when compared to a reduced model of three predictors. This reduced model has 96% of the explanatory power (R-sq of 0.629 vs 0.651) of my final multivariate model, and uses 78% fewer predictors (3 vs 14). The F Statistic is almost 1000 point higher and equally significant as the more complex model, and is free of any multicollinearity warning in the model summary.
 
 ---
 
 ## Results
 
 - Reduced model showed strong correlation identified between ACT scores and three main factors: **unemployment rate**, **college education rate**, and **free/reduced lunch rate**
-- Expanded models with school-type and testing-policy data improved explanatory power marginally (**R² = 0.655 vs 0.624**)
+- Expanded models with additional school-level, area-level, and testing-policy data improved explanatory power marginally (**R² = 0.629 vs 0.651**)
 - All p-values of my expanded model were highly statistically significant, but the coefficients were very small and did not result in much change in ACT Scores
 - Ultimately, the reduced model is preferred for interpretability and practical application.
 - One way I could continue to investigate the correlations with my additional data to ACT Scores would be to count at the School District level: Higher Education Institutions by School District, rather than limiting it to just the same Zip Code. Include Referrals and Arrests at all schools in the school district rather than that specific High School in that specific year.
+- The best improvement, however, would come from a more representative sample of schools from all 50 states
 
 
 ---
